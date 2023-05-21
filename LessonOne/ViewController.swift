@@ -19,13 +19,15 @@ class ViewController: UIViewController {
 
     @IBAction func greetingBottonTap() {
         greetingLabel.isHidden.toggle()
-        
+
  //       if greetingLabel.isHidden {
  //           greetingButton.setTitle("Показать приветствие", for: .normal)
  //       } else {
  //           greetingButton.setTitle("Скрыть приветствие", for: .normal)
  //       }
-      
+ //
+        //  Ниже более которкий код:
+        
         greetingButton.setTitle(
             greetingLabel.isHidden ? "Показать приветствие" : "Скрыть приветствие",
             for: .normal
