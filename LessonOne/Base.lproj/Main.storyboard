@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,14 +13,14 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LessonOne" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U5c-Ii-sj4">
-                                <rect key="frame" x="20" y="79" width="353" height="349.66666666666669"/>
+                                <rect key="frame" x="20" y="40" width="280" height="244"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, World!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="zSm-z6-Ah0">
-                                        <rect key="frame" x="80.000000000000014" y="155" width="186.33333333333337" height="40"/>
+                                        <rect key="frame" x="50" y="102" width="180" height="40"/>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="36"/>
                                         <color key="textColor" systemColor="systemYellowColor"/>
                                         <nil key="highlightedColor"/>
@@ -28,19 +28,28 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemMintColor"/>
                                 <constraints>
-                                    <constraint firstItem="zSm-z6-Ah0" firstAttribute="top" secondItem="U5c-Ii-sj4" secondAttribute="top" constant="155" id="5F0-AD-IA4"/>
-                                    <constraint firstItem="zSm-z6-Ah0" firstAttribute="leading" secondItem="U5c-Ii-sj4" secondAttribute="leading" constant="80" id="RCm-5u-ByB"/>
-                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="zSm-z6-Ah0" secondAttribute="trailing" constant="20" symbolic="YES" id="xd5-xk-9nX"/>
+                                    <constraint firstItem="zSm-z6-Ah0" firstAttribute="leading" secondItem="U5c-Ii-sj4" secondAttribute="leading" constant="50" id="Awt-4z-Mm3"/>
+                                    <constraint firstAttribute="trailing" secondItem="zSm-z6-Ah0" secondAttribute="trailing" constant="50" id="JqC-fL-JgE"/>
+                                    <constraint firstItem="zSm-z6-Ah0" firstAttribute="centerY" secondItem="U5c-Ii-sj4" secondAttribute="centerY" id="y4j-ix-9bc"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qWI-Rh-tmk">
-                                <rect key="frame" x="20" y="448.66666666666674" width="353" height="349.33333333333326"/>
+                                <rect key="frame" x="20" y="304" width="280" height="244"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tGr-0u-OE7">
-                                        <rect key="frame" x="75.333333333333329" y="159.33333333333331" width="202.33333333333337" height="35"/>
+                                        <rect key="frame" x="50" y="95.5" width="180" height="53.5"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Показать приветствие"/>
+                                        <buttonConfiguration key="configuration" style="filled">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Показать приветствие">
+                                                    <attributes>
+                                                        <font key="NSFont" size="17" name="Helvetica"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
                                         <connections>
                                             <action selector="greetingBottonTap" destination="BYZ-38-t0r" eventType="touchUpInside" id="nJY-Yy-bpm"/>
                                         </connections>
@@ -48,8 +57,9 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemPurpleColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="tGr-0u-OE7" secondAttribute="bottom" constant="155" id="Bcl-C2-JUS"/>
-                                    <constraint firstItem="tGr-0u-OE7" firstAttribute="centerX" secondItem="qWI-Rh-tmk" secondAttribute="centerX" id="fWY-2M-oAB"/>
+                                    <constraint firstAttribute="trailing" secondItem="tGr-0u-OE7" secondAttribute="trailing" constant="50" id="4su-xB-6al"/>
+                                    <constraint firstItem="tGr-0u-OE7" firstAttribute="centerY" secondItem="qWI-Rh-tmk" secondAttribute="centerY" id="C82-tW-qat"/>
+                                    <constraint firstItem="tGr-0u-OE7" firstAttribute="leading" secondItem="qWI-Rh-tmk" secondAttribute="leading" constant="50" id="gQ4-su-Dy6"/>
                                 </constraints>
                             </view>
                         </subviews>
